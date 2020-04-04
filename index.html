@@ -23,6 +23,17 @@
     <link rel="stylesheet" href="css/fancybox.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+
+  function verif(){
+    document.getElementById("msg").style.color = "#000000";
+    document.getElementById("msg").style.backgroundColor = "#9f785f";
+    document.getElementById("msg").innerHTML = "Merci pour votre message !";
+
+  }
+
+    </script>
 <style>
 
 .btn-primar {
@@ -69,6 +80,10 @@
     <div class="site-logo">
       <a href="index.html"style="color:#000000;" >CLEAN & GO </a>
       <p style="margin-top:-10px;margin-left:55px;">Orléans</p>
+
+      <div style="border:1px solid #000000;border-radius: 5px;text-align:center;"id="msg">
+
+      </div>
     </div>
 
     <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span style="color:#000000;" class="icon-menu h3"></span></a></div>
@@ -99,7 +114,7 @@
 <div style="background:#fff;height:20px;">
 </div>
 
-  <div style="text-align: center;margin-left:80px;width:140px;border-radius:6px;background-color: #9f785f;color:#fff;"><a href="contact_form/index.html">Se connecter</a></div>
+  <div style="text-align: center;margin-left:80px;width:140px;border-radius:6px;background-color: #9f785f;color:#fff;"><a style="color:#fff;" href="contact_form/index.html">Se connecter</a></div>
   <div style="color:#000000;margin-left:120px;margin-top:40px;">
     Horaires
 
@@ -472,19 +487,19 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8">
-              <h2 class="text-white mb-5 heading">Contact</h2>
+              <h2 class="text-white mb-5 heading">Contactez-nous</h2>
 
-              <form action="#">
+              <form id="myform">
 
 
 
                     <div class="row form-group">
                       <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-white" for="fname">First Name</label>
+                        <label class="text-white" for="fname">Nom</label>
                         <input type="text" id="fname" class="form-control">
                       </div>
                       <div class="col-md-6">
-                        <label class="text-white" for="lname">Last Name</label>
+                        <label class="text-white" for="lname">Prénom</label>
                         <input type="text" id="lname" class="form-control">
                       </div>
                     </div>
@@ -497,24 +512,18 @@
                       </div>
                     </div>
 
-                    <div class="row form-group">
 
-                      <div class="col-md-12">
-                        <label class="text-white" for="subject">Subject</label>
-                        <input type="subject" id="subject" class="form-control">
-                      </div>
-                    </div>
 
                     <div class="row form-group mb-5">
                       <div class="col-md-12">
                         <label class="text-white" for="message">Message</label>
-                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Envoyez-nous un message pour plus d'informations..."></textarea>
                       </div>
                     </div>
 
                     <div class="row form-group">
                       <div class="col-md-12">
-                        <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                        <input style="border:1px solid black;background-color:#9f785f;"onclick="verif()" type="submit" value="Envoyer Message" class="btn btn-primary btn-md text-white">
                       </div>
                     </div>
 
