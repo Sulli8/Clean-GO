@@ -37,6 +37,7 @@ document.getElementById("text2").innerHTML = "Notre projet consiste à mettre e
 
   }
 
+
     </script>
 <style>
 
@@ -45,7 +46,7 @@ body{
 }
 .btn-primar {
   color: #fff;
-  background-color: #9f785f;
+  background-color: #1a1a1a;;
   border-color: #9f785f; }
   .btn-primar:hover {
     color: #fff;
@@ -67,6 +68,76 @@ body{
     .show > .btn-primar.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(239, 108, 87, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(239, 108, 87, 0.5); }
+
+      .site-section.darken-bg:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100px;
+          height: 4px;
+          background: #9f785f;
+      }
+      .ripple{
+        border: 3px solid #9f785f;
+        color:#fff;
+        background-color:#1a1a1a;
+        height:400px;
+        width:200px;
+      }
+
+      .hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #1a1a1a;
+  padding: 8px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #9f785f;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+span:hover{
+  transition: 1s;
+  color:#FF00FF;
+}
+
 </style>
   </head>
   <body style="background-color:#fff;"data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
@@ -85,10 +156,10 @@ body{
 
   <header style="background-color:#fff;"class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
     <div class="site-logo">
-      <a href="index.html"style="color:#000000;" >CLEAN & GO </a>
+      <a href="index.html"style="color:#1a1a1a;" >CLEAN & GO </a>
       <p style="margin-top:-10px;margin-left:55px;">Orléans</p>
 
-      <div style="border:1px solid #000000;border-radius: 5px;text-align:center;"id="msg">
+      <div style="border:1px solid #1a1a1a;border-radius: 5px;text-align:center;"id="msg">
 
       </div>
     </div>
@@ -97,17 +168,17 @@ body{
 
     <div class="main-menu">
       <ul class="js-clone-nav">
-        <li ><a style="color:#000000;"  href="#section-home" class="nav-link">Acceuil</a></li>
-        <li><a style="color:#000000;" href="#section-photos" class="nav-link">Engagements</a></li>
-        <li><a style="color:#000000;"  href="#section-blog" class="nav-link">Fonctionnement</a></li>
-        <li><a style="color:#000000;"  href="#section-bio" class="nav-link">Histoire</a></li>
-        <li><a  style="color:#000000;" href="#section-contact" class="nav-link">Assistance</a></li>
-              <li><a  style="color:#000000;" href="localisation.html" class="nav-link">Localisations</a></li>
+        <li ><a style="color:#1a1a1a;"  href="#section-home" class="nav-link">Acceuil</a></li>
+        <li><a style="color:#1a1a1a;" href="#section-photos" class="nav-link">Engagements</a></li>
+        <li><a style="color:#1a1a1a;"  href="#section-blog" class="nav-link">Tarifs</a></li>
+        <li><a style="color:#1a1a1a;"  href="#section-bio" class="nav-link">Histoire</a></li>
+        <li><a  style="color:#1a1a1a;" href="#section-contact" class="nav-link">Contact</a></li>
+              <li><a  style="color:#1a1a1a;" href="localisation.html" class="nav-link">Localisations</a></li>
       </ul>
-      <ul class="social js-clone-nav">
-        <li><a href="#"><span class="icon-facebook"></span></a></li>
-        <li><a href="#"><span class="icon-twitter"></span></a></li>
-        <li><a href="#"><span class="icon-instagram"></span></a></li>
+    <ul>
+    <a style="color:#1a1a1a;"href="https://www.facebook.com/"><span class="icon-facebook"></span></a>
+      <a style="margin-left: 10px;color:#1a1a1a;" href="https://twitter.com/login?lang=fr"><span class="icon-twitter"></span></a></li>
+    <a style="margin-left: 10px;color:#1a1a1a;" href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
       </ul>
     </div>
   </header>
@@ -122,7 +193,7 @@ body{
 <div style="background:#fff;height:20px;">
 </div>
 
-  <div style="text-align: center;margin-left:80px;width:140px;border-radius:6px;background-color: #9f785f;color:#fff;"><a style="color:#fff;" href="contact_form/index.html">Se connecter</a></div>
+  <div style="text-align: center;margin-left:80px;width:140px;border-radius:6px;background-color: #1a1a1a;color:#fff;"><a style="color:#fff;" href="contact_form/index.html">Se connecter</a></div>
   <div style="color:#000000;margin-left:120px;margin-top:40px;">
     Horaires
 
@@ -159,64 +230,26 @@ body{
 
       </section>
 
-      <section class="row align-items-stretch photos" id="section-photos">
-        <div style="margin-top: 50px;color:#000000;font-size:40px;margin-left:400px;">
+      <section style="background-size: 1300px;background-repeat: no-repeat;background-image:url('images/pressing.png');"class="row align-items-stretch photos" id="section-photos">
+        <div style="margin-top: 50px;color:#fff;font-size:40px;margin-left:400px;">
       Nos Engagements
 
     </div>
-    <i style="font-size: 200px;margin-left:-600px ;margin-top:200px;color:#9f785f;" class="fas fa-tint"></i>
-<i style="color:#000000;font-size: 50px;margin-top:290px;margin-left:-100px;"class="fas fa-hand-sparkles"></i>
-  <i style="font-size: 200px;margin-left:100px ;margin-top:200px;color:#000000;" class="fas fa-tint"></i>
-<i  style="color:#9f785f;font-size: 50px;margin-left:-90px ;margin-top:290px;"class="fas fa-stopwatch"></i>
-    <i style="font-size: 200px;margin-left:190px ;margin-top:200px;color:#9f785f;" class="fas fa-tint"></i>
-    <i style="font-size: 50px;margin-left:-85px;margin-top:290px ;color:#000000;"class="far fa-smile"></i>
-    <i style="font-size: 200px;margin-left:900px ;margin-top:-200px;color:#000000;" class="fas fa-tint"></i>
-    <i style="font-size: 50px;margin-left:-90px ;margin-top:-110px;color:#9f785f;" class="fas fa-handshake"></i>
-<p style="font-size:20px;margin-top: 50px;margin-left:170px ;color:#000000;">Propreté<p>
-  <p style="font-size:20px;margin-top: 50px;margin-left:120px ;color:#000000;">Ponctualité<p>
-    <p style="font-size:20px;margin-top: 50px;margin-left:110px ;color:#000000;">Satisfaction Client<p>
-      <p style="font-size:20px;margin-top: 50px;margin-left:90px ;color:#000000;">Service client réactif<p>
+    <i style="font-size: 200px;margin-left:-600px ;margin-top:200px;color:#1a1a1a;" class="fas fa-tint"></i>
+<i style="color:#fff;;font-size: 50px;margin-top:290px;margin-left:-100px;"class="fas fa-hand-sparkles"></i>
+  <i style="font-size: 200px;margin-left:100px ;margin-top:200px;color:#1a1a1a;;" class="fas fa-tint"></i>
+<i  style="color:#fff;font-size: 50px;margin-left:-90px ;margin-top:290px;"class="fas fa-stopwatch"></i>
+    <i style="font-size: 200px;margin-left:190px ;margin-top:200px;color:#1a1a1a;" class="fas fa-tint"></i>
+    <i style="font-size: 50px;margin-left:-85px;margin-top:290px ;color:#fff;;"class="far fa-smile"></i>
+    <i style="font-size: 200px;margin-left:900px ;margin-top:-200px;color:#1a1a1a;;" class="fas fa-tint"></i>
+    <i style="font-size: 50px;margin-left:-90px ;margin-top:-110px;color:#fff;" class="fas fa-handshake"></i>
+<p style="font-size:20px;margin-top: 50px;margin-left:170px ;color:#fff;">Propreté<p>
+  <p style="font-size:20px;margin-top: 50px;margin-left:120px ;color:#fff;">Ponctualité<p>
+    <p style="font-size:20px;margin-top: 50px;margin-left:110px ;color:#fff;">Satisfaction Client<p>
+      <p style="font-size:20px;margin-top: 50px;margin-left:90px ;color:#fff;">Service client réactif<p>
       </section> <!-- #section-photos -->
 
-      <section class="site-section" id="section-testimonial">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="heading text-uppercase text-white">Testimonial</h2>
 
-              <div class="row justify-content-center">
-                <div class="col-md-12">
-
-                  <div class="owl-carousel slide-one-item home-slider">
-
-                    <div class="testimony text-center px-md-4">
-                      <figure class="mx-auto d-inline-block">
-                        <img src="images/person_2.jpg" alt="Image" class="mx-auto img-fluid w-25 rounded-circle">
-                      </figure>
-                      <p class="text-white"><strong>Jean Smith</strong></p>
-                      <blockquote>
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur quis facilis quam optio voluptate totam placeat, doloremque. Sit repellat ipsum dolor fugit similique itaque maxime saepe ipsam. Velit, harum!&rdquo;</p>
-                      </blockquote>
-                    </div>
-
-                    <div class="testimony text-center px-md-4">
-                      <figure class="mx-auto d-inline-block">
-                        <img src="images/person_3.jpg" alt="Image" class="mx-auto img-fluid w-25 rounded-circle">
-                      </figure>
-                      <p class="text-white"><strong>Jean Smith</strong></p>
-                      <blockquote>
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur quis facilis quam optio voluptate totam placeat, doloremque. Sit repellat ipsum dolor fugit similique itaque maxime saepe ipsam. Velit, harum!&rdquo;</p>
-                      </blockquote>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section class="site-section darken-bg" id="section-bio">
         <div class="container">
@@ -232,92 +265,66 @@ Nous vous proposons de répondre à vos problématiques de temps, de place et
 <p id="text" style="color:#fff;"></p>
 <p id="text2" style="color:#fff;"></p>
                 </p>
-          <!--     <div class="d-block d-md-flex mt-5">
-                <div class="mr-md-auto mr-2">
-                  <ul class="ul-check list-unstyled success">
-                    <li>Optio eveniet ex laborum</li>
-                    <li>Inventore sapiente tenetur</li>
-                    <li>Ipsam aliquam esse</li>
-                  </ul>
-                </div>
-               <div class="mr-md-auto">
-                  <ul class="ul-check list-unstyled success">
-                    <li>Optio eveniet ex laborum</li>
-                    <li>Inventore sapiente tenetur</li>
-                    <li>Ipsam aliquam esse</li>
-                  </ul>
-                </div>
 
-              </div>--->
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="site-section" id="section-blog">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="row">
-                <h2 class="heading text-uppercase text-white"  data-aos="fade-up">Blog</h2>
-                <div class="col-md-12 mb-4" data-aos="fade-up">
-                  <div class="d-md-flex d-block blog-entry align-items-start">
-                    <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a></div>
-                    <div>
-                      <h2 class="mt-0 mb-2"><a href="single.html">My New Photography Has Been Featured in Forbes</a></h2>
-                      <div class="meta mb-3">Posted by Ben Jones on <a href="#">Jan 18, 2019</a></div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquid doloremque qui, saepe alias eum?</p>
-                    </div>
-                  </div>
-                </div>
+      <section style="background-size: 1300px;background-repeat: no-repeat;background-image:url('images/tarifs.jpeg');"  class="site-section" id="section-blog">
 
-                <div class="col-md-12 mb-4" data-aos="fade-up">
-                  <div class="d-md-flex d-block blog-entry align-items-start">
-                    <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="single.html"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a></div>
-                    <div>
-                      <h2 class="mt-0 mb-2"><a href="single.html">My New Photography Has Been Featured in Forbes</a></h2>
-                      <div class="meta mb-3">Posted by Ben Jones on <a href="#">Jan 18, 2019</a></div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquid doloremque qui, saepe alias eum?</p>
-                    </div>
-                  </div>
-                </div>
+        <div>
+            <h2 style="text-align: center;color:#1a1a1a;"class="heading text-uppercase text">Tarifs</h2>
+    <div style="margin-left:250px;">
+      <div class="ripple hvr-sweep-to-top" style="">
 
-                <div class="col-md-12 mb-4" data-aos="fade-up">
-                  <div class="d-md-flex d-block blog-entry align-items-start">
-                    <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="single.html"><img src="images/blog_3.jpg" alt="Image" class="img-fluid"></a></div>
-                    <div>
-                      <h2 class="mt-0 mb-2"><a href="single.html">My New Photography Has Been Featured in Forbes</a></h2>
-                      <div class="meta mb-3">Posted by Ben Jones on <a href="#">Jan 18, 2019</a></div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquid doloremque qui, saepe alias eum?</p>
-                    </div>
-                  </div>
-                </div>
+        <div style="height:100px;"></div>
+        <p style="text-align: center;">Tarif Etudiant</br>----</br>Tarif maximum conseillé
 
-                <div class="col-md-12 mb-4" data-aos="fade-up">
-                  <div class="d-md-flex d-block blog-entry align-items-start">
-                    <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="single.html"><img src="images/blog_4.jpg" alt="Image" class="img-fluid"></a></div>
-                    <div>
-                      <h2 class="mt-0 mb-2"><a href="single.html">My New Photography Has Been Featured in Forbes</a></h2>
-                      <div class="meta mb-3">Posted by Ben Jones on <a href="#">Jan 18, 2019</a></div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquid doloremque qui, saepe alias eum?</p>
-                    </div>
-                  </div>
-                </div>
+8,00 €</br>----</br>Livraison en 48h</p>
 
-                <div class="col-12 text-center">
-                  <div class="custom-pagination">
-                    <span>1</span>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <span>...</span>
-                    <a href="#">7</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+
+
+
+</div>
+
+<div class="hvr-sweep-to-top"style="border: 3px solid #9f785f;margin-top: 2px;margin-left: 50px;color:#fff;background-color:#1a1a1a;height:400px;width:200px;">
+
+  <div style="height:100px;"></div>
+  <p style="text-align: center;">Tarif Particulier</br>----</br>Tarif maximum conseillé
+
+10,00 €</br>----</br>Livraison en 48h</p>
+
+
+
+
+
+
+</div>
+
+<div class="hvr-sweep-to-top" style="border: 3px solid #9f785f;margin-top: 2px;margin-left: 45px;color:#fff;background-color:#1a1a1a;height:400px;width:200px;">
+
+  <div style="height:100px;"></div>
+  <p style="text-align: center;">Tarif Entreprise</br>----</br>Tarif maximum conseillé
+
+8,50 €</br>----</br>Livraison en 48h</p>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
       </section>
 
       <section class="site-section darken-bg" id="section-contact">
@@ -370,17 +377,17 @@ Nous vous proposons de répondre à vos problématiques de temps, de place et
           </div>
         </div>
       </section>
-      <footer style="margin-left:-80px;background-color:#9f785f;width:1300px;height:200px;">
+      <footer style="background-position: center;background-size: 1300px;background-repeat: no-repeat;background-image:url('images/footer.png');margin-left:-80px;background-color:#9f785f;width:1300px;height:300px;">
 <div style="height:5px;"></div>
         <div style="margin-left:100px;margin-top:2px;border:0.5px solid #fff; width:1150px;"></div>
 
         <div style="border:2px solid #9f785f;color:#fff;border-radius:8px;margin-left:910px;width:150px;height:50px;background-color:#000000;">
-  <i style="font-size:16px;margin-left:-800px;color:#000000;"class="fab fa-instagram"></i>
-  <i style="font-size:16px;margin-left:20px;color:#000000;" class="fab fa-facebook-f"></i>
-  <i style="font-size:16px;margin-left:25px;color:#000000;" class="fab fa-cc-visa"></i>
-<i style="font-size:16px;margin-left:30px;color:#000000;"class="fab fa-cc-paypal"></i>
-<i  style="font-size:16px;margin-left:35px;color:#000000;" class="fab fa-paypal"></i>
-<i  style="font-size:16px;margin-left:40px;color:#000000;" class="fab fa-cc-mastercard"></i>
+  <i style="font-size:16px;margin-left:-800px;color:#fff;"class="fab fa-instagram"></i>
+  <i style="font-size:16px;margin-left:20px;color:#fff;" class="fab fa-facebook-f"></i>
+  <i style="font-size:16px;margin-left:25px;color:#fff;" class="fab fa-cc-visa"></i>
+<i style="font-size:16px;margin-left:30px;color:#fff;"class="fab fa-cc-paypal"></i>
+<i  style="font-size:16px;margin-left:35px;color:#fff;" class="fab fa-paypal"></i>
+<i  style="font-size:16px;margin-left:40px;color:#fff;" class="fab fa-cc-mastercard"></i>
 
 
           <a style="color:white;" href="https://www.apple.com/fr/ios/app-store/"><img style="margin-left:540px;margin-top:0px;"src="images/apple_2.png"></img><p style="margin-left:50px;margin-top:-40px;font-size:10px;">Télécharger dans</p></br> <p style='margin-top:-50px;margin-left:50px;'>l'App Store</p></a></div>
@@ -396,6 +403,7 @@ Nous vous proposons de répondre à vos problématiques de temps, de place et
 <p style="color:#fff;margin-left:500px;margin-top:-10px;">+33 (0) 684 440 071</p>
 <p style="color:#fff;margin-left:500px;margin-top:-10px;">contact@clean_go_france.com </p>
 <h3 style="color:#fff;margin-left:840px;margin-top:-150px;">Nos partenaires </h3>
+<p style="color:#fff;margin-left:840px;margin-top:-10px;">ISC Paris Orléans </p>
       </footer>
 
       <div class="row justify-content-center">
